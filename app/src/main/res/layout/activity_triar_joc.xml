@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.victor.victorolivaresexamenrec.TriarJocActivity">
+
+    <TextView
+        android:id="@+id/twTria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Tria Un Joc:"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/rgJocs"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="75dp">
+
+        <RadioButton
+            android:id="@+id/rbOnce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ONCE" />
+
+        <RadioButton
+            android:id="@+id/rbPrimitiva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="La Primitiva" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btCancelarJoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="102dp"
+        android:layout_marginStart="64dp"
+        android:text="Cancelar" />
+
+    <Button
+        android:id="@+id/btSeleccionarJoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btCancelarJoc"
+        android:layout_alignBottom="@+id/btCancelarJoc"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="53dp"
+        android:text="Seleccionar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rgJocs"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_marginBottom="13dp"
+        app:srcCompat="@mipmap/la_primitiva" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rgJocs"
+        android:layout_marginTop="28dp"
+        android:layout_toEndOf="@+id/btCancelarJoc"
+        app:srcCompat="@mipmap/once" />
+</RelativeLayout>
